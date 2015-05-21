@@ -1,0 +1,34 @@
+a {
+  display: inline-block;
+}
+
+/* Fade in Horizontal */
+.fade-in-horz::before,
+.fade-in-horz::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.fade-in-horz:hover::before,
+.fade-in-horz:hover::after {
+  opacity: 1;
+}
+
+.fade-in-horz::before {
+  transform: translate(-25px, 3px);
+}
+.fade-in-horz:hover::before {
+  transform: translate(-5px, 3px);
+}
+
+.fade-in-horz::after {
+  transform: translate(25px, 3px);
+}
+.fade-in-horz:hover::after {
+  transform: translate(5px, 3px);
+}

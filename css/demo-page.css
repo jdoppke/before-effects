@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 100%;
+  color: #333;
+}
+
+a {
+  color: #00a;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.demo {
+  padding: 40px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 120%;
+  margin-bottom: 30px;
+}
