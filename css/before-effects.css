@@ -32,3 +32,34 @@ a {
 .fade-in-horz:hover::after {
   transform: translate(5px, 3px);
 }
+
+/* Fade out Horizontal */
+.fade-out-horz::before,
+.fade-out-horz::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  opacity: 1;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.fade-out-horz:hover::before,
+.fade-out-horz:hover::after {
+  opacity: 0;
+}
+
+.fade-out-horz::before {
+  transform: translate(-5px, 3px);
+}
+.fade-out-horz:hover::before {
+  transform: translate(-25px, 3px);
+}
+
+.fade-out-horz::after {
+  transform: translate(5px, 3px);
+}
+.fade-out-horz:hover::after {
+  transform: translate(25px, 3px);
+}
