@@ -18,6 +18,8 @@ a {
 .demo {
   padding: 40px 0;
   text-align: center;
+  width: 25%;
+  float: left;
 }
 
 h2 {

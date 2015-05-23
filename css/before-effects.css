@@ -63,3 +63,66 @@ a {
 .fade-out-horz:hover::after {
   transform: translate(25px, 3px);
 }
+
+
+/* Fade in Top */
+.fade-in-top::before,
+.fade-in-top::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.fade-in-top:hover::before,
+.fade-in-top:hover::after {
+  opacity: 1;
+}
+
+.fade-in-top::before {
+  transform: translate(-5px, -25px);
+}
+.fade-in-top:hover::before {
+  transform: translate(-5px, 3px);
+}
+
+.fade-in-top::after {
+  transform: translate(5px, -25px);
+}
+.fade-in-top:hover::after {
+  transform: translate(5px, 3px);
+}
+
+/* Fade in Bottom */
+.fade-in-bottom::before,
+.fade-in-bottom::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.fade-in-bottom:hover::before,
+.fade-in-bottom:hover::after {
+  opacity: 1;
+}
+
+.fade-in-bottom::before {
+  transform: translate(-5px, 28px);
+}
+.fade-in-bottom:hover::before {
+  transform: translate(-5px, 3px);
+}
+
+.fade-in-bottom::after {
+  transform: translate(5px, 28px);
+}
+.fade-in-bottom:hover::after {
+  transform: translate(5px, 3px);
+}
