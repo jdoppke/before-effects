@@ -16,10 +16,12 @@ a {
 }
 
 .demo {
-  padding: 40px 0;
+  height: 100px;
   text-align: center;
   width: 25%;
   float: left;
+  padding: 70px 20px;
+  box-sizing: border-box;
 }
 
 h2 {
