@@ -126,3 +126,31 @@ a {
 .fade-in-bottom:hover::after {
   transform: translate(5px, 3px);
 }
+
+/* Expand from Center */
+.expand-from-center {
+  vertical-align: middle;
+}
+
+.expand-from-center::before,
+.expand-from-center::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: 0 auto;
+  height: 2px;
+  background: #00a;
+  opacity: 0;
+  transition: width .3s ease, opacity .3s ease;
+  vertical-align: middle;
+}
+
+.expand-from-center::before {
+  margin-bottom: 2px;
+}
+
+.expand-from-center:hover::before,
+.expand-from-center:hover::after {
+  opacity: 1;
+  width: 100%;
+}
