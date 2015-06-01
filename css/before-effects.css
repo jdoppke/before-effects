@@ -154,3 +154,38 @@ a {
   opacity: 1;
   width: 100%;
 }
+
+/* Cross Fade Horizontal */
+.cross-fade-horizontal {
+  vertical-align: middle;
+  position: relative;
+}
+
+.cross-fade-horizontal::before,
+.cross-fade-horizontal::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  position: absolute;
+  transform: translate(0, -2px);
+  top: 0;
+  transition: left .3s ease-out, right .3s ease-out;
+}
+
+.cross-fade-horizontal::before {
+  left: 0;
+}
+
+.cross-fade-horizontal::after {
+  right: 0;
+}
+
+.cross-fade-horizontal:hover::before {
+  left: 100%;
+}
+
+.cross-fade-horizontal:hover::after {
+  right: 100%;
+}
