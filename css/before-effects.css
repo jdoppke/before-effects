@@ -191,7 +191,7 @@ a {
 }
 
 
-/* Cross Fade Horizontal */
+/* Cross Fade Horizontal Rotate */
 .cross-fade-horizontal-rotate {
   vertical-align: middle;
   position: relative;
@@ -226,4 +226,40 @@ a {
 .cross-fade-horizontal-rotate:hover::after {
   right: 100%;
   transform: translate(0, -2px) rotate(180deg);
+}
+
+
+/* Vertical Slant */
+.vertical-slant-in {
+  vertical-align: middle;
+  position: relative;
+}
+
+.vertical-slant-in::before,
+.vertical-slant-in::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  position: absolute;
+  transform: translate(0, -2px);
+  top: 0;
+  transition: transform .2s ease-out;
+}
+
+.vertical-slant-in::before {
+  left: 0;
+}
+
+.vertical-slant-in::after {
+  right: 0;
+}
+
+.vertical-slant-in:hover::before {
+  transform: translate(0, -2px) rotate(30deg);
+}
+
+.vertical-slant-in:hover::after {
+  transform: translate(0, -2px) rotate(-30deg);
 }
