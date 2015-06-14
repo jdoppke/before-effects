@@ -189,3 +189,41 @@ a {
 .cross-fade-horizontal:hover::after {
   right: 100%;
 }
+
+
+/* Cross Fade Horizontal */
+.cross-fade-horizontal-rotate {
+  vertical-align: middle;
+  position: relative;
+}
+
+.cross-fade-horizontal-rotate::before,
+.cross-fade-horizontal-rotate::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 17px;
+  background: #00a;
+  position: absolute;
+  transform: translate(0, -2px);
+  top: 0;
+  transition: left .3s ease-out, right .3s ease-out, transform .3s ease-out;
+}
+
+.cross-fade-horizontal-rotate::before {
+  left: 0;
+}
+
+.cross-fade-horizontal-rotate::after {
+  right: 0;
+}
+
+.cross-fade-horizontal-rotate:hover::before {
+  left: 100%;
+  transform: translate(0, -2px) rotate(180deg);
+}
+
+.cross-fade-horizontal-rotate:hover::after {
+  right: 100%;
+  transform: translate(0, -2px) rotate(180deg);
+}
