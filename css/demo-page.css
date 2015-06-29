@@ -24,6 +24,15 @@ a {
   box-sizing: border-box;
 }
 
+header {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
 h2 {
   font-size: 120%;
   margin-bottom: 30px;
