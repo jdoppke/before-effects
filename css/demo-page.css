@@ -27,6 +27,12 @@ a {
 header {
     padding: 50px;
     text-align: center;
+    background: #333;
+    color: #ddd;
+}
+
+header h1 {
+  color: #F5C142;
 }
 
 h1 {
