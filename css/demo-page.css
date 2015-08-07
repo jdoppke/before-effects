@@ -33,7 +33,48 @@ header {
 
 header h1 {
   color: #F5C142;
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  margin: 0;
 }
+
+header h1::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 20px;
+  background: #F5C142;
+  animation-timing-function: ease-in-out;
+  animation-name: left-border;
+  animation-duration: .5s;
+  animation-delay: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translate(-10px, 0);
+}
+
+@keyframes left-border {
+  0% {
+    transform: translate(-10px, 0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, 80px);
+  }
+}
+
+
 
 h1 {
     margin-bottom: 20px;
